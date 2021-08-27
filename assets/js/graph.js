@@ -55,8 +55,8 @@
 
     const simulation = d3
       .forceSimulation(nodesData)
-      .force("charge", d3.forceManyBody().strength(-2000).distanceMax(450))
-      .force("link", d3.forceLink(linksData).id((link) => link.id).distance(50))
+      .force("charge", d3.forceManyBody().strength(-4000))
+      .force("link", d3.forceLink(linksData).id((link) => link.id))
       .force("center", d3.forceCenter(width / 2, height / 2))
       .force("forceX", d3.forceX().x(width / 2))
       .force("forceY", d3.forceY().y(height / 2))

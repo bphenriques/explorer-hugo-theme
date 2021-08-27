@@ -1,0 +1,20 @@
+<!--
+  Returns true if Second is a backlink of the First.
+  Usage: partial "docs/is-backlink" (dict "First" $page "Second" $otherPage)
+
+  Notes:
+  - The regex can be optimized to be a single pass-through.
+-->
+
+{{- $isNotSamePage := (not (eq .First.Title .Second.Title)) -}}
+{{- $mentionsFileName :=
+    (findRE
+        (printf "['\"\\s]?%s['\"\\s]" (lower .First.File.BaseFileName))
+        (lower .Second.RawContent)) -}}
+
+{{- $mentionsTitle :=
+    (findRE
+        (printf "['\"\\s]?%s['\"\\s]" (lower .First.Title))
+        (lower .Second.RawContent)) -}}
+
+{{- return (and $isNotSamePage (or $mentionsFileName $mentionsTitle)) -}}

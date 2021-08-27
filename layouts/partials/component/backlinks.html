@@ -1,8 +1,7 @@
 <!-- Obtain all backlinks. Looks within the page's raw content -->
-{{ $re := $.File.BaseFileName }}
 {{ $backlinks := slice }}
-{{ range .Site.AllPages }}
-   {{ if and (findRE $re .RawContent) (not (eq $re .File.BaseFileName)) }}
+{{ range $other := .Site.RegularPages }}
+   {{- if (partial "util/is-backlink" (dict "First" $.Page "Second" $other)) -}}
       {{ $backlinks = $backlinks | append . }}
    {{ end }}
 {{ end }}

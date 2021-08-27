@@ -1,24 +1,31 @@
-{{- $pages := .Site.RegularPages -}}
 {{- $nodes := slice -}}
 {{- $edges := slice -}}
+
+{{- $pages := .Site.RegularPages -}}
 {{- range $current := $pages -}}
-  {{- range $neighbour := $pages -}}
-    {{- if and (findRE $current.BaseFileName $neighbour.RawContent) (not (eq $current.Title $neighbour.Title)) -}}
-      {{- $edges = $edges | append (printf "{ \"source\":%s,\"target\":%s}" ($current.Title | jsonify) ($neighbour.Title | jsonify)) -}}
+  {{- $nodes = $nodes | append (dict "Id" $current.Title "Path" $current.RelPermalink "Label" $current.Title) -}}
+  {{- range $other := $pages -}}
+    {{- if (partial "util/is-backlink" (dict "First" $current "Second" $other)) -}}
+      {{- $edges = $edges | append (dict "Source" $current.Title "Target" $other.Title) -}}
     {{- end -}}
   {{- end -}}
-
-  {{- $nodes = $nodes | append (printf "{ \"id\":%s,\"path\":%s,\"label\":%s}" ($current.Title | jsonify) ($current.RelPermalink | jsonify) ($current.Title | jsonify) ) -}}
 {{- end -}}
 {
    "nodes": [
      {{- range $index, $node := $nodes -}}
-     {{- if gt $index 0 }},{{end}} {{ $node }}
+     {{- if gt $index 0 }},{{end}} {
+        "id": {{ $node.Id | jsonify }},
+        "path": {{ $node.Path | jsonify }},
+        "label": {{ $node.Label | jsonify }}
+        }
      {{- end -}}
    ],
    "edges": [
      {{- range $index, $edge := $edges -}}
-     {{- if gt $index 0 }},{{end}} {{ $edge }}
+     {{- if gt $index 0 }},{{end}} {
+        "source": {{ $edge.Source | jsonify }},
+        "target": {{ $edge.Target | jsonify }}
+      }
      {{- end -}}
    ]
 }
