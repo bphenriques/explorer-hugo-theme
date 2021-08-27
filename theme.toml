@@ -1,0 +1,12 @@
+name = "Tagged Notes"
+license = "MIT"
+licenselink = "https://github.com/bphenriques/tagged-notes-hugo-theme/blob/master/LICENSE"
+description = "Digital Garden Hugo theme with tag exploration"
+homepage = "https://github.com/bphenriques/tagged-notes-hugo-theme"
+tags = ["responsive", "clean", "digital-garden", "tags", "search", "mobile"]
+features = []
+min_version = "0.68"
+
+[author]
+  name = "Bruno Henriques"
+  homepage = "https://github.com/bphenriques/"

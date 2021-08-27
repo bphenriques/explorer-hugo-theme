@@ -1,0 +1,8 @@
+theme = "tagged-notes-hugo-theme"
+title = "Example Digital Garden 🌱"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[params]
+  Theme = 'dark'
