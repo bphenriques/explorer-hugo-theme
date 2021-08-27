@@ -1,6 +1,9 @@
 # Contributing
 
-Contributions are very welcome. I am no front-end expert, therefore I am sure that are many opportunities for improvement.
+This theme is far from being classified as stable so contributions are very welcome!
+
+Moreover, I may know one or two things about front-end but I am no expert! If you like this theme feel free to pitch in, 
+I thank you for your help.
 
 # Previewing
 

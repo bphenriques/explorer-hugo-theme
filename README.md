@@ -1,22 +1,41 @@
 # Tag Digital Garden Hugo Theme
 
-[![Hugo](https://img.shields.io/badge/hugo-0.68-blue.svg)](https://gohugo.io)
+[![Hugo](https://img.shields.io/badge/hugo-0.85-blue.svg)](https://gohugo.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-![Build with Hugo](https://github.com/bphenriques/tagged-notes-hugo-theme/workflows/Build%20with%20Hugo/badge.svg)
+![Build with Hugo](https://github.com/bphenriques/tagged-notes-hugo-theme/actions/workflows/main.yml/badge.svg)
+![Beta](https://img.shields.io/badge/status-beta-orange.svg)
+![Digital Garden](https://img.shields.io/badge/-Digital%20Garden-yellowgreen.svg)
+
+## Overview
+
+This is my personal fork of [@alex-shpak](https://github.com/alex-shpak)'s [Hugo Book](https://github.com/alex-shpak/hugo-book) theme (MIT License)
+that I have been using in my [Digital Garden](https://bphenriques.github.io/knowledge-base).
+
+I am building this theme to build my personal Digital Garden and to learn more about Hugo theming and web-development.
+Do not expect the same set of functionalities as the upstream theme (e.g., menu and localization) but expect some 
+additional ones such as:
+- Backlinks
+- Explorable graph
+- Colored Tag exploration
+
+Last and not the least, this theme is still **beta**. If you like this theme feel free to contribute! I am no front-end expert and there is so much room for improvement!
+
+Thank you!
 
 ## Features
 
-- Clean simple design
-- Light and Mobile-Friendly
+- Built for digital gardens (I used it for my [Digital Garden](https://bphenriques.github.io/knowledge-base))
+- Clean and simple design
+- Mobile Friendly
+- Dark Mode
+- Primary features work without JavaScript
 - Backlinks
 - Explorable graph
 - Colorized Tags
-- Primary features work without JavaScript
-- Dark Mode
 
 ## Requirements
 
-- Hugo 0.68 or higher
+- Hugo 0.85 or higher
 - Hugo extended version, read more [here](https://gohugo.io/news/0.48-relnotes/)
 
 ## Installation
@@ -28,20 +47,20 @@ $ git submodule add https://github.com/bphenriques/tagged-notes-hugo-theme theme
 ```
 
 Then either:
-- Run hugo with the theme: `hugo server --minify --theme tagged-notes-hugo-theme`
+- Run hugo with the theme set: `hugo server --minify --theme tagged-notes-hugo-theme`
 - Set `theme` configuration setting to `tagged-notes-hugo-theme`.
 
-## Blog
+## Content Creation
 
-This theme supports blog posts under the section `posts`. Given that it is not the main use-case of this theme, it only
-supports minimal features.
+This theme supports two types of content:
+- `notes`: holds the main content of your digital garden.
+- `posts`: holds blog posts. It is not the main use-case of this theme, so a minimal set of features is provided.
 
 ## Configuration
 
 ### Site Configuration
 
-There are a few configuration options that you can add to your `config.toml` file.  
-You can also see the `yaml` example [here](https://github.com/alex-shpak/hugo-book/blob/master/exampleSite/config.yaml).
+There are a few configuration options that you can add to your `config.toml` file.
 
 ```toml
 # (Optional) Set Google Analytics if you use it to track your website.
@@ -57,7 +76,7 @@ enableGitInfo = true
   BookTheme = 'dark'
 
   # (Optional, default to title) Sets the brand's name.
-  BrandTitle = 'Bruno Henriques'
+  BrandTitle = 'My Page'
 
   # (Optional, default true) Controls table of contents visibility on right side of pages.
   # You can also specify this parameter per page in front matter.
@@ -65,16 +84,7 @@ enableGitInfo = true
 
   # (Optional, default none) Set the path to a logo for the book. If the logo is
   # /static/logo.png then the path would be 'logo.png'
-  BookLogo = 'logo.png'
-
-  # Set source repository location.
-  # Used for 'Last Modified' and 'Edit this page' links.
-  BookRepo = 'https://github.com/alex-shpak/hugo-book'
-  
-  # Enable 'Edit this page' links for 'doc' page type.
-  # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.
-  # Path must point to the site directory.
-  BookEditPath = 'edit/master/exampleSite'
+  Logo = 'logo.png'
 
   # (Optional, default Jan 2, 2006) Configure the date format used to render dates.
   DateFormat = 'Jan 2, 2006'
@@ -89,11 +99,13 @@ enableGitInfo = true
 You can specify additional params in the front matter of individual pages:
 
 ```toml
-# Set type to 'docs' if you want to render page outside of configured section or if you render section other than 'docs'
-type = 'docs'
+# Use either type 'notes' or 'posts'
+type = 'notes'
 
 # (Optional) Set 'false' to hide ToC from page
 ToC = true
+
+tags = ["tag1", "tag2"]
 
 # (Optional) Set to 'false' to exclude page from search index.
 searchExclude = true
@@ -108,10 +120,10 @@ Support in the future. Let me know what you are looking for.
 | File                     | Description                                                                           |
 | ------------------------ | ------------------------------------------------------------------------------------- |
 | `static/favicon.png`     | Override default favicon                                                              |
-| `assets/_custom.scss`    | Customise or override scss styles                                                     |
-| `assets/_variables.scss` | Override default SCSS variables                                                       |
-| `assets/_fonts.scss`     | Replace default font with custom fonts (e.g. local files or remote like google fonts) |
-| `assets/mermaid.json`    | Replace Mermaid initialization config                                                 |
+| `assets/scss/_custom.scss`    | Customise or override scss styles                                                     |
+| `assets/scss/_variables.scss` | Override default SCSS variables                                                       |
+| `assets/scss/_fonts.scss`     | Replace default font with custom fonts (e.g. local files or remote like google fonts) |
+| `assets/js/mermaid.json`    | Replace Mermaid initialization config                                                 |
 
 ### Plugins
 
@@ -152,7 +164,15 @@ By default, Goldmark trims unsafe outputs which might prevent some shortcodes fr
   unsafe = true
 ```
 
-# Contributing 
+# Thank you note
+
+This theme wouldn't be possible without:
+- The awesome work done by [@alex-shpak](https://github.com/alex-shpak) in [Hugo Book](https://github.com/alex-shpak/hugo-book) (MIT License). 
+- Maggie Delano's [Digital Garden](https://www.maggiedelano.com/garden/) as it is where I
+  saw how one can add graph navigation on Jenkins (adapted to Hugo).
+- Several other Digital Gardens
+
+# Contributing
 
 Refer to [contributing](CONTRIBUTING.md).
 

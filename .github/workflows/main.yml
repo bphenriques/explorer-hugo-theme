@@ -9,7 +9,7 @@ jobs:
       matrix:
         hugo-version:
           - 'latest'
-          - '0.68.0'
+          - '0.85.0'
     steps:
       - uses: actions/checkout@v2
 
@@ -21,4 +21,4 @@ jobs:
 
       - name: Test Example Site
         working-directory: exampleSite
-        run: make clean preview
+        run: hugo --themesDir ../..
