@@ -55,6 +55,8 @@
       .force("charge", d3.forceManyBody().strength(-2000).distanceMax(450))
       .force("link", d3.forceLink(linksData).id((link) => link.id).distance(50))
       .force("center", d3.forceCenter(width / 2, height / 2))
+      .force("forceX", d3.forceX().x(width / 2))
+      .force("forceY", d3.forceY().y(height / 2))
       .force("collision", d3.forceCollide().radius(80));
 
     const zoomHandler = d3
