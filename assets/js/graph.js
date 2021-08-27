@@ -4,6 +4,9 @@
   Initializes a edge connected graph given the set of nodes and edges provided in graphData.
   Based and adapted from maggiedelano/digital-garden.
 
+  TODO:
+  - Clusterize nodes that share the same tags without adding a link (link has a different meaning).
+
   Uses D3 v7.0.1.
 */
 (function () {

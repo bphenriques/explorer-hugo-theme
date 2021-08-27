@@ -3,7 +3,7 @@
 {{- $edges := slice -}}
 {{- range $current := $pages -}}
   {{- range $neighbour := $pages -}}
-    {{- if and (findRE $current.Title $neighbour.Content) (not (eq $current.Title $neighbour.Title)) -}}
+    {{- if and (findRE $current.BaseFileName $neighbour.RawContent) (not (eq $current.Title $neighbour.Title)) -}}
       {{- $edges = $edges | append (printf "{ \"source\":%s,\"target\":%s}" ($current.Title | jsonify) ($neighbour.Title | jsonify)) -}}
     {{- end -}}
   {{- end -}}
