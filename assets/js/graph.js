@@ -20,6 +20,8 @@
 
   const graphWrapper = document.getElementById('graph-wrapper')
 
+  let currentNodeId = -1;
+
   if (graphWrapper) {
     init();
   }
@@ -41,6 +43,14 @@
       "svg"
     );
     graphWrapper.appendChild(graphSVG);
+
+    // Set relevant information
+    nodesData.forEach((node) => {
+        if (isCurrentPath(node.path)) {
+            currentNodeId = node.id;
+        }
+    });
+
 
     // Set SVG shape
     const width = graphWrapper.clientWidth;
@@ -72,7 +82,6 @@
     resetZoom(zoomHandler, svg)
   }
 
-  //TODO: Zoom to current node
   function resetZoom(zoomHandler, svg) {
     let width = Number(svg.attr("width"));
     let height = Number(svg.attr("height"));
@@ -91,8 +100,8 @@
       let newNodes = nodeSVGGroup.data(nodesData, (d) => d.id)
         .enter()
         .append("circle")
-        .attr("r", (d) => isCurrentPath(d.path) ? RADIUS * CURRENT_NODE_RADIUS_PROPORTION : RADIUS)
-        .attr("active", (d) => isCurrentPath(d.path) ? true : null)
+        .attr("r", (d) => d.id == currentNodeId ? RADIUS * CURRENT_NODE_RADIUS_PROPORTION : RADIUS)
+        .attr("active", (d) => d.id == currentNodeId ? true : null)
         .merge(nodeSVGGroup);
 
       let newLinks = linkSVGGroup.data(linksData, (link) => `${link.source.id}-${link.target.id}`)
@@ -104,7 +113,7 @@
         .enter()
         .append("text")
         .text((d) => shorten(d.label.replace(/_*/g, ""), MAX_LABEL_LENGTH))
-        .attr("active", (d) => isCurrentPath(d.path) ? true : null)
+        .attr("active", (d) => d.id == currentNodeId ? true : null)
         .merge(labelsSVGGroup);
 
       // Add handler after setting the new content
@@ -123,7 +132,7 @@
       newNodes.attr("cx", (d) => d.x).attr("cy", (d) => d.y);
       newLabels
         .attr("x", (d) => d.x)
-        .attr("y", (d) => d.y - (isCurrentPath(d.path) ? RADIUS * CURRENT_NODE_RADIUS_PROPORTION : RADIUS) - 10);
+        .attr("y", (d) => d.y - (d.id == currentNodeId ? RADIUS * CURRENT_NODE_RADIUS_PROPORTION : RADIUS) - 10);
       newLinks.attr("x1", (d) => d.source.x).attr("y1", (d) => d.source.y)
           .attr("x2", (d) => d.target.x).attr("y2", (d) => d.target.y);
   }

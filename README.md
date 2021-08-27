@@ -2,17 +2,7 @@
 
 [![Hugo](https://img.shields.io/badge/hugo-0.68-blue.svg)](https://gohugo.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-![Build with Hugo](https://github.com/alex-shpak/hugo-book/workflows/Build%20with%20Hugo/badge.svg)
-
-### [Hugo](https://gohugo.io) documentation theme as simple as plain book
-
-- [Features](#features)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Blog](#blog)
-- [Configuration](#configuration)
-- [Shortcodes](#shortcodes)
-- [Contributing](#contributing)
+![Build with Hugo](https://github.com/bphenriques/tagged-notes-hugo-theme/workflows/Build%20with%20Hugo/badge.svg)
 
 ## Features
 
