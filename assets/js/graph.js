@@ -10,8 +10,8 @@
   Uses D3 v7.0.1.
 */
 (function () {
-  const RADIUS = 15;
-  const CURRENT_NODE_RADIUS_PROPORTION = 2;
+  const MIN_RADIUS = 10;
+  const MAX_RADIUS = 40;
 
   const TICKS = 100;
   const MAX_LABEL_LENGTH = 50;
@@ -21,6 +21,7 @@
   const graphWrapper = document.getElementById('graph-wrapper')
 
   let currentNodeId = -1;
+  let nodesSize = {};
 
   if (graphWrapper) {
     init();
@@ -44,11 +45,12 @@
     );
     graphWrapper.appendChild(graphSVG);
 
-    // Set relevant information
+    // Pre-cache relevant information
     nodesData.forEach((node) => {
         if (isCurrentPath(node.path)) {
             currentNodeId = node.id;
         }
+        nodesSize[node.id] = computeNodeSize(node);
     });
 
 
@@ -100,7 +102,7 @@
       let newNodes = nodeSVGGroup.data(nodesData, (d) => d.id)
         .enter()
         .append("circle")
-        .attr("r", (d) => d.id == currentNodeId ? RADIUS * CURRENT_NODE_RADIUS_PROPORTION : RADIUS)
+        .attr("r", (d) => nodesSize[d.id])
         .attr("active", (d) => d.id == currentNodeId ? true : null)
         .merge(nodeSVGGroup);
 
@@ -132,7 +134,7 @@
       newNodes.attr("cx", (d) => d.x).attr("cy", (d) => d.y);
       newLabels
         .attr("x", (d) => d.x)
-        .attr("y", (d) => d.y - (d.id == currentNodeId ? RADIUS * CURRENT_NODE_RADIUS_PROPORTION : RADIUS) - 10);
+        .attr("y", (d) => d.y - nodesSize[d.id] - 10);
       newLinks.attr("x1", (d) => d.source.x).attr("y1", (d) => d.source.y)
           .attr("x2", (d) => d.target.x).attr("y2", (d) => d.target.y);
   }
@@ -181,6 +183,17 @@
     nodeSVGGroup.attr("class", "");
     linkSVGGroup.attr("class", "");
     labelsSVGGroup.attr("class", "");
+  }
+
+  function computeNodeSize(node) {
+      let weight = 10 * Math.sqrt(node.number_neighbours + 1);
+      if (weight < MIN_RADIUS) {
+        weight = MIN_RADIUS;
+      } else if (weight > MAX_RADIUS) {
+        weight = MAX_RADIUS;
+      }
+
+      return weight;
   }
 
   function shorten(str, maxLen, separator = ' ') {

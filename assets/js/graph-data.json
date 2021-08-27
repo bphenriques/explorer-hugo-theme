@@ -3,11 +3,16 @@
 
 {{- $pages := .Site.RegularPages -}}
 {{- range $current := $pages -}}
-  {{- $nodes = $nodes | append (dict "Id" $current.Title "Path" $current.RelPermalink "Label" $current.Title) -}}
+  {{ $neighbours := slice }}
   {{- range $other := $pages -}}
     {{- if (partial "util/is-backlink" (dict "First" $current "Second" $other)) -}}
-      {{- $edges = $edges | append (dict "Source" $current.Title "Target" $other.Title) -}}
+      {{- $neighbours = $neighbours | append (dict "Source" $current.Title "Target" $other.Title) -}}
     {{- end -}}
+  {{- end -}}
+
+  {{- $nodes = $nodes | append (dict "Id" $current.Title "Path" $current.RelPermalink "Label" $current.Title "NumberNeighbours" (len $neighbours)) -}}
+  {{- if (gt (len $neighbours) 0) -}}
+     {{- $edges = $edges | append $neighbours -}}
   {{- end -}}
 {{- end -}}
 {
@@ -16,7 +21,8 @@
      {{- if gt $index 0 }},{{end}} {
         "id": {{ $node.Id | jsonify }},
         "path": {{ $node.Path | jsonify }},
-        "label": {{ $node.Label | jsonify }}
+        "label": {{ $node.Label | jsonify }},
+        "number_neighbours": {{ $node.NumberNeighbours | jsonify }}
         }
      {{- end -}}
    ],
