@@ -2,7 +2,7 @@
 @import "variables";
 @import "themes/{{ default "light" .Site.Params.Theme }}";
 
-@import "normalize";
+@import "vendor/normalize";
 @import "utils";
 @import "main";
 @import "fonts";
@@ -15,6 +15,8 @@
 @import "components/markdown";
 @import "components/shortcodes";
 @import "components/search";
+@import "components/list-item";
+@import "components/page-menu";
 
 // Custom defined styles
 @import "custom";

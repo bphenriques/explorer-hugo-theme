@@ -1,8 +1,13 @@
+ul.item-preview-list {
+  li {
+    margin: 0.5rem 0;
+  }
+}
+
 .item-preview {
     border-radius: .5rem;
     background-color: var(--backlinks-background);
     padding: 0.5rem;
-    margin-bottom: 0.25rem;
     font-size: .75rem;
 
     .item-preview-title {

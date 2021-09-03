@@ -8,11 +8,13 @@
 
 <!-- Generate the HTML -->
 {{- if gt (len $backlinks) 0 -}}
-<div class="backlinks">
-<p class="toc-title">Mentioned In</p>
-{{- range $backlinks -}}
-  {{ partial "component/preview" . }}
-{{- end -}}
-</div>
+<nav class="backlinks">
+  <p class="toc-title">Mentioned In</p>
+  <ul class="item-preview-list">
+  {{- range $backlinks -}}
+    <li>{{ partial "component/preview" . }}</li>
+  {{- end -}}
+  </ul>
+</nav>
 {{- end -}}
 

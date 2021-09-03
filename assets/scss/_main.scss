@@ -42,42 +42,14 @@ img {
   @include outline;
 }
 
-.toc-content nav ul li {
-  margin: 0.75rem 0;
+.container {
+  margin: 0 auto;
 }
 
 aside nav ul {
   padding: 0;
   margin: 0;
   list-style: none;
-
-  li {
-    margin: 0 0;
-    position: relative;
-  }
-
-  a {
-    display: block;
-  }
-
-  ul {
-    padding-inline-start: $padding-16;
-  }
-}
-
-ul.pagination {
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-
-  .page-item a {
-    padding: $padding-16;
-  }
-}
-
-.container {
-  max-width: $container-max-width;
-  margin: 0 auto;
 }
 
 .icon {
@@ -101,6 +73,14 @@ ul.pagination {
   flex: 0 0 $menu-width;
   font-size: $font-size-14;
 
+  a:hover {
+    opacity: 0.5;
+  }
+
+  a, label {
+    color: inherit;
+  }
+
   .menu-content {
     width: $menu-width;
     padding: $padding-16;
@@ -113,28 +93,25 @@ ul.pagination {
     margin-bottom: 0.25rem;
   }
 
+  .menu-shortcut-link {
+    font-weight: 600;
+  }
+
   .menu-tag-item {
     padding: 0.5rem 0rem;
     display: flex;
     -moz-box-align: center;
     align-items: center;
     font-weight: 400;
-    font-size: 14px;
+    font-size: $font-size-14;
 
     .tag-dot {
         width: 10px;
         height: 10px;
         border-radius: 50%;
         margin-right: 0.5em;
-        flex: none;
+        flex: none; // Ensures that circles are not distorted if the tag's label is big
     }
-  }
-  a:hover {
-    opacity: 0.5;
-  }
-
-  a, label {
-    color: inherit;
   }
 }
 
@@ -144,145 +121,12 @@ ul.pagination {
   padding: $padding-16;
 }
 
-.page-header {
-  display: none;
-  margin-bottom: $padding-16;
-
-  label {
-    line-height: 0;
-  }
-
-  img.icon {
-    height: 1.5em;
-    width: 1.5em;
-  }
-}
-
-.list-item:hover {
-  background-color: var(--gray-100);
-}
-
-.menu-shortcut-link:hover {
-  opacity: 0.5;
-}
-.menu-shortcut-link {
-  font-weight: 600;
-}
-
 .frontpage-list-title {
-  margin-bottom: 0.5rem;
-}
-
-.list-item {
-  box-sizing: border-box;
-  margin: 0px -0.5rem;
-  min-width: 0px;
-  padding: 0.75rem 0.5rem;
-  border-radius: 0.3rem;
-  transition: all 150ms ease-in-out 0s;
-  justify-content: space-between;
-  overflow: hidden;
-  display: block; // only do this if the width is low
-
-  .list-item-title {
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--body-font-color);
-    margin-top: 0;
-    margin-bottom: 0.3rem;
-  }
-
-  .list-item-metadata {
-    box-sizing: border-box;
-    margin: 0;
-    display: flex;
-    align-items: center;
-
-    .list-item-tags {
-        box-sizing: border-box;
-        margin: 0;
-        min-width: 0;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-align-items: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-flex-shrink: 0;
-        -ms-flex-negative: 0;
-        flex-shrink: 0;
-      }
-
-      .list-item-created-at {
-          box-sizing: border-box;
-          margin: 0 0 0 0.5rem;
-          font-size: 0.8rem;
-          color: var(--theme-ui-colors-text,hsl(210,17%,85%));
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
-
-          h3 {
-            margin-top: 0;
-          }
-        }
-  }
-}
-
-.list-item-tag {
-  box-sizing: border-box;
-  margin: 0px 0.25rem 0px 0px;
-  min-width: 0px;
-  display: inline-block;
-  vertical-align: baseline;
-  white-space: nowrap;
-  line-height: 1; // Fixes off-center caused by global line-height
-  background-color: #999999;
-  border-radius: 5px;
-  color: #222222 !important; //TODO: Hack
-  text-decoration: none;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
-  font-weight: 400;
-  font-size: 0.7rem;
-}
-
-.toc-tags {
-  margin-bottom: 1.25rem;
-}
-
-.toc-title {
-  font-weight: 600;
   margin-bottom: 0.5rem;
 }
 
 .markdown .post-date {
   margin-top: -0.25rem;
-}
-
-.toc {
-  flex: 0 0 $toc-width;
-  font-size: $font-size-12;
-
-  .toc-content {
-    width: $toc-width;
-    padding: $padding-16;
-
-    @include fixed;
-  }
-
-  img {
-    height: 1em;
-    width: 1em;
-  }
-
-  nav > ul > li:first-child {
-    margin-top: 0;
-  }
 }
 
 .page-footer {
@@ -307,6 +151,8 @@ ul.pagination {
   will-change: transform, margin, opacity;
 }
 
+/* Mobile Layout */
+
 @media screen and (max-width: $mobile-breakpoint) {
   #menu-control,
   #toc-control {
@@ -322,6 +168,10 @@ ul.pagination {
 
   .toc {
     display: none;
+  }
+
+  .list-item {
+    display: block;
   }
 
   .page-header {
@@ -374,25 +224,11 @@ ul.pagination {
   }
 }
 
-.backlinks {
-    margin-bottom: 1rem;
-}
+.page-header {
+  display: none;
+  margin-bottom: $padding-16;
 
-
-.search ul li {
-  margin: 0.5rem 0;
-}
-
-
-// Extra space for big screens
-@media screen and (min-width: $container-max-width) {
-  .page,
-  .menu .menu-content,
-  .toc .toc-content {
-    padding: $padding-16 * 2 $padding-16;
-  }
-
-  .list-item {
-    display: flex;
+  label {
+    line-height: 0;
   }
 }

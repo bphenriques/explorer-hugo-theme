@@ -12,7 +12,7 @@
 <link rel="icon" href="{{ "favicon.png" | relURL }}" type="image/x-icon">
 
 <!-- Theme stylesheet, you can customize scss by creating `assets/custom.scss` in your website -->
-{{- $styles := resources.Get "scss/book.scss" | resources.ExecuteAsTemplate "scss/book.scss" . | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+{{- $styles := resources.Get "scss/tagged-notes.scss" | resources.ExecuteAsTemplate "scss/tagged-notes.scss" . | resources.ToCSS | resources.Minify | resources.Fingerprint }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}" {{ template "integrity" $styles }}>
 
 {{- if default true .Site.Params.Search -}}

@@ -1,0 +1,31 @@
+.backlinks {
+    margin-bottom: 1rem;
+}
+
+.toc {
+  flex: 0 0 $toc-width;
+  font-size: $font-size-12;
+
+  .toc-title {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .toc-tags {
+    margin-bottom: 1.25rem;
+  }
+
+  .toc-content {
+    width: $toc-width;
+    padding: $padding-16;
+
+    @include fixed;
+  }
+}
+
+#TableOfContents {
+  ul li:not(:first-child) {
+    margin: 0.75rem 0;
+  }
+}
+
