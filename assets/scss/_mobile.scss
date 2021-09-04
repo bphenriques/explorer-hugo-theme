@@ -58,6 +58,14 @@
   }
 
   // Parts of the page that needs to be rendered differently.
+  .page-header {
+    margin-bottom: $padding-16;
+
+    label {
+      line-height: 0;
+    }
+  }
+
   .toc,
   .post-title {
     display: none;

@@ -34,31 +34,12 @@ a {
   color: var(--color-link);
 }
 
-.container {
-  margin: 0 auto;
-}
-
-aside nav ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
 .icon {
   filter: var(--icon-filter);
 }
 
-.brand {
-  font-family: sans-serif;
-  font-weight: bold;
-  margin-top: 0;
-  margin-bottom: $padding-16;
-
-  img {
-    height: 1.5em;
-    width: 1.5em;
-    margin-inline-end: $padding-8;
-  }
+.container {
+  margin: 0 auto;
 }
 
 .page {
@@ -67,13 +48,15 @@ aside nav ul {
   padding: $padding-16;
 }
 
+aside nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+// Hidden for mobile
 .page-header {
   display: none;
-  margin-bottom: $padding-16;
-
-  label {
-    line-height: 0;
-  }
 }
 
 // Accessibility

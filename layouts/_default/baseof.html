@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Lang }}" dir="{{ .Site.Language.LanguageDirection | default "ltr" }}">
-<head>
-  {{ partial "html-head" . }}
-</head>
+<head>{{ partial "html-head" . }}</head>
 <body dir="{{ .Site.Language.LanguageDirection | default "ltr" }}">
   <input type="checkbox" class="hidden toggle" id="menu-control" />
   <input type="checkbox" class="hidden toggle" id="toc-control" />
   <main class="container flex">
     <aside class="menu">
       <div class="menu-content">
-        {{ partial "left-menu" . }} <!-- Left menu Content -->
+        {{ partial "left-menu" . }}
       </div>
     </aside>
 
