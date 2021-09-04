@@ -61,77 +61,11 @@ aside nav ul {
   }
 }
 
-.menu {
-  flex: 0 0 $menu-width;
-  font-size: $font-size-14;
-
-  a:hover {
-    opacity: 0.5;
-  }
-
-  a, label {
-    color: inherit;
-  }
-
-  .menu-content {
-    width: $menu-width;
-    padding: $padding-16;
-    background: var(--body-background);
-
-    @include fixed;
-  }
-
-  .menu-tags-title {
-    margin-bottom: 0.25rem;
-  }
-
-  .menu-shortcut-link {
-    font-weight: 600;
-  }
-
-  .menu-tag-item {
-    padding: 0.5rem 0rem;
-    display: flex;
-    -moz-box-align: center;
-    align-items: center;
-    font-weight: 400;
-    font-size: $font-size-14;
-
-    .tag-dot {
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        margin-right: 0.5em;
-        flex: none; // Ensures that circles are not distorted if the tag's label is big
-    }
-  }
-}
-
 .page {
   min-width: $body-min-width;
   flex-grow: 1;
   padding: $padding-16;
 }
-
-.frontpage-list-title {
-  margin-bottom: 0.5rem;
-}
-
-.markdown .post-date {
-  margin-top: -0.25rem;
-}
-
-.page-footer {
-  padding-top: $padding-16;
-  font-size: $font-size-14;
-
-  img {
-    height: 1em;
-    width: 1em;
-    margin-inline-end: $padding-8;
-  }
-}
-
 
 .page-header {
   display: none;

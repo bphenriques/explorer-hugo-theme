@@ -22,14 +22,12 @@
     z-index: 1;
   }
 
-  .toc {
+  .toc,
+  .post-title {
     display: none;
   }
 
-  .list-item {
-    display: block;
-  }
-
+  .list-item,
   .page-header {
     display: block;
   }

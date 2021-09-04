@@ -5,9 +5,9 @@
 
   <strong>{{ partial "util/title" . }}</strong>
 
-  <label for="toc-control">
-    {{ if and .File (default true (default .Site.Params.ToC .Params.ToC)) }}
-    <img src="{{ "svg/toc.svg" | relURL }}" class="icon" alt="Table of Contents" />
-    {{ end }}
-  </label>
+    <label for="toc-control">
+  {{ if and .File (default true (default .Site.Params.ToC .Params.ToC)) }}
+      <img src="{{ "svg/toc.svg" | relURL }}" class="icon" alt="Table of Contents" />
+  {{ end }}
+    </label>
 </div>

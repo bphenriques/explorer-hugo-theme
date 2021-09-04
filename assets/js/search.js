@@ -73,7 +73,7 @@
       return;
     }
 
-    // TODO explore asyncSearch (triggers flicker as of now).
+    // TODO explore asyncSearch (it flickers if I add that.
     let searchHitIndices = window.bookSearchIndex.search(input.value, { limit: 10, enrich: true });
     const mapResults = new Map();
     // Would love to have a flatMap
