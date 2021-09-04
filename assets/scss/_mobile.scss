@@ -10,9 +10,14 @@
 }
 
 @media screen and (max-width: $mobile-breakpoint) {
+  // Menu Handling
   #menu-control,
   #toc-control {
     display: inline;
+  }
+
+  .page-header {
+    display: block;
   }
 
   .menu {
@@ -21,17 +26,6 @@
     font-size: $font-size-base;
     z-index: 1;
   }
-
-  .toc,
-  .post-title {
-    display: none;
-  }
-
-  .list-item,
-  .page-header {
-    display: block;
-  }
-
 
   #menu-control:checked ~ main {
     .menu {
@@ -61,6 +55,16 @@
     .page-header aside {
       display: block;
     }
+  }
+
+  // Parts of the page that needs to be rendered differently.
+  .toc,
+  .post-title {
+    display: none;
+  }
+
+  .list-item {
+    display: block;
   }
 
   // Accessibility
