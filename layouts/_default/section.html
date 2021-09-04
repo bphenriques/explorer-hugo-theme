@@ -5,7 +5,7 @@
 {{ if (gt ($recent | len) 0) }}
   <h2 class="frontpage-list-title">Recent {{ .Type | humanize }}</h2>
   {{ range first 20 $recent }}
-    {{ partial "list-item" . }}
+    {{ partial "component/item-list" . }}
   {{ end }}
 {{ end }}
 
