@@ -13,15 +13,15 @@
     margin-bottom: -2px;
     padding: 3px 8px;
     font-size: 0.8em;
-}
 
-.copy-code-button:hover {
-    cursor: pointer;
-}
+   &:hover {
+      cursor: pointer;
+   }
 
-.copy-code-button:active {
-    color: #272822;
-    background-color: var(--body-font-color);
+   &active {
+      color: #272822;
+      background-color: var(--body-font-color);
+   }
 }
 
 .highlight pre {

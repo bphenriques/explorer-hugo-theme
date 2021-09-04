@@ -32,9 +32,6 @@
     display: block;
   }
 
-  #menu-control:focus ~ main label[for="menu-control"] {
-    @include outline;
-  }
 
   #menu-control:checked ~ main {
     .menu {
@@ -60,17 +57,22 @@
     }
   }
 
-  #toc-control:focus ~ main label[for="toc-control"] {
-    @include outline;
-  }
-
   #toc-control:checked ~ main {
     .page-header aside {
       display: block;
     }
   }
 
-  //for RTL support
+  // Accessibility
+  #menu-control:focus ~ main label[for="menu-control"] {
+    @include outline;
+  }
+
+  #toc-control:focus ~ main label[for="toc-control"] {
+    @include outline;
+  }
+
+  // RTL support
   body[dir="rtl"] #menu-control:checked ~ main {
     .menu .menu-content {
       transform: translateX(-$menu-width);

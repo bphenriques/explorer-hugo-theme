@@ -76,4 +76,9 @@ aside nav ul {
   }
 }
 
+// Accessibility
+:focus {
+  @include outline;
+}
+
 

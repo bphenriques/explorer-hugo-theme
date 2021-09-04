@@ -54,10 +54,10 @@
           }
         }
   }
-}
 
-.list-item:hover {
-  background-color: var(--gray-100);
+  &:hover {
+     background-color: var(--gray-100);
+  }
 }
 
 .list-item-tag {
