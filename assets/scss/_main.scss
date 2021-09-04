@@ -34,14 +34,6 @@ a {
   color: var(--color-link);
 }
 
-img {
-  vertical-align: baseline;
-}
-
-:focus {
-  @include outline;
-}
-
 .container {
   margin: 0 auto;
 }
