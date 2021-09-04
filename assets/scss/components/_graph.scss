@@ -16,14 +16,14 @@
 
   .links line {
     transition: all 0.15s ease-out;
-    stroke: #ccc;
+    stroke: var(--graph-edge-color);
     stroke-width: 1;
   }
 
   .nodes circle {
     transition: all 0.15s ease-out;
     cursor: pointer;
-    fill: #c8e6c9;
+    fill: var(--graph-node-color);
   }
 
   .labels text {
@@ -32,11 +32,11 @@
     text-anchor: middle;
     alignment-baseline: central;
     font-size: 1rem;
-    fill: #FAFAFA;
+    fill: var(--graph-label-color);
   }
 
   .nodes [active], .labels [active] {
     cursor: pointer;
-    fill: #ffe57f;
+    fill: var(--graph-current-node-color);
   }
 }
