@@ -1,0 +1,81 @@
+// Responsive styles
+.menu-content,
+.toc-content,
+.page,
+.page-header aside,
+.markdown {
+  transition: 0.2s ease-in-out;
+  transition-property: transform, margin, opacity, visibility;
+  will-change: transform, margin, opacity;
+}
+
+@media screen and (max-width: $mobile-breakpoint) {
+  #menu-control,
+  #toc-control {
+    display: inline;
+  }
+
+  .menu {
+    visibility: hidden;
+    margin-inline-start: -$menu-width;
+    font-size: $font-size-base;
+    z-index: 1;
+  }
+
+  .toc {
+    display: none;
+  }
+
+  .list-item {
+    display: block;
+  }
+
+  .page-header {
+    display: block;
+  }
+
+  #menu-control:focus ~ main label[for="menu-control"] {
+    @include outline;
+  }
+
+  #menu-control:checked ~ main {
+    .menu {
+      visibility: initial;
+    }
+
+    .menu .menu-content {
+      transform: translateX($menu-width);
+      box-shadow: 0 0 $padding-8 rgba(0, 0, 0, 0.1);
+    }
+
+    .page {
+      opacity: 0.25;
+    }
+
+    .menu-overlay {
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+
+  #toc-control:focus ~ main label[for="toc-control"] {
+    @include outline;
+  }
+
+  #toc-control:checked ~ main {
+    .page-header aside {
+      display: block;
+    }
+  }
+
+  //for RTL support
+  body[dir="rtl"] #menu-control:checked ~ main {
+    .menu .menu-content {
+      transform: translateX(-$menu-width);
+    }
+  }
+}
