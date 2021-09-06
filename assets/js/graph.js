@@ -187,13 +187,7 @@
 
   function computeNodeSize(node) {
       let weight = 10 * Math.sqrt(node.number_neighbours + 1);
-      if (weight < MIN_RADIUS) {
-        weight = MIN_RADIUS;
-      } else if (weight > MAX_RADIUS) {
-        weight = MAX_RADIUS;
-      }
-
-      return weight;
+      return Math.min(Math.max(weight, MIN_RADIUS), MAX_RADIUS);
   }
 
   function shorten(str, maxLen, separator = ' ') {

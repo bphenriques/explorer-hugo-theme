@@ -2,8 +2,10 @@
 <html lang="{{ .Site.Language.Lang }}" dir="{{ .Site.Language.LanguageDirection | default "ltr" }}">
 <head>{{ partial "html-head" . }}</head>
 <body dir="{{ .Site.Language.LanguageDirection | default "ltr" }}">
+  <!-- Mobile layout control -->
   <input type="checkbox" class="hidden toggle" id="menu-control" />
   <input type="checkbox" class="hidden toggle" id="toc-control" />
+
   <main class="container flex">
     <aside class="menu">
       <div class="menu-content">
@@ -48,12 +50,6 @@
 
 {{ define "footer" }}
   {{ partial "footer" . }}
-{{ end }}
-
-{{ define "main" }}
-  <article class="markdown">
-    {{- .Content -}}
-  </article>
 {{ end }}
 
 {{ define "toc" }}

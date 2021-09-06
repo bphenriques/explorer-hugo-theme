@@ -1,5 +1,4 @@
 {{ define "main" }}
-<!-- TODO: Can I reuse list template? -->
 
 {{ $recent := where .Site.RegularPages.ByPublishDate.Reverse "Section" .Type }}
 {{ if (gt ($recent | len) 0) }}
