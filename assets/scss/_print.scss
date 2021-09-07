@@ -1,13 +1,13 @@
 @media print {
-  .menu,
+  .site-menu,
+  .content-menu,
   .page-footer,
-  .backlinks,
-  .toc {
+  .backlinks {
     display: none;
   }
 
-  .page-header,
-  .page-header aside {
+  .mobile-navigation-header,
+  .mobile-navigation-header aside {
     display: block;
   }
 

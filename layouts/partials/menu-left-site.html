@@ -3,10 +3,10 @@
     {{ partial "component/search" . }}
 
     {{- if (gt (where .Site.RegularPages "Section" "blog" | len) 0) -}}
-      <a class="menu-shortcut-link" href="{{ "/blog" | relURL }}">Blog Posts</a>
+      <a class="site-menu-shortcut-link" href="{{ "/blog" | relURL }}">Blog Posts</a>
     {{- end -}}
     {{- if (gt (where .Site.RegularPages "Section" "notes" | len) 0) -}}
-      <a class="menu-shortcut-link" href="{{ "/notes" | relURL }}">Recent Notes</a>
+      <a class="site-menu-shortcut-link" href="{{ "/notes" | relURL }}">Recent Notes</a>
     {{- end -}}
     <p class="menu-tags-title"><b>Tags</b></p>
     <ul>

@@ -3,55 +3,42 @@
 <head>{{ partial "html-head" . }}</head>
 <body dir="{{ .Site.Language.LanguageDirection | default "ltr" }}">
   <!-- Mobile layout control -->
-  <input type="checkbox" class="hidden toggle" id="menu-control" />
-  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <input type="checkbox" class="hidden toggle" id="site-menu-control" />
+  <input type="checkbox" class="hidden toggle" id="content-menu-control" />
 
   <main class="container flex">
-    <aside class="menu">
-      <div class="menu-content">
-        {{ partial "left-menu" . }}
+    <aside class="site-menu">
+      <div class="site-menu-content">
+        {{ partial "menu-left-site" . }}
       </div>
     </aside>
 
     <div class="page">
-      <header class="page-header">
-        {{ template "header" . }} <!-- Mobile layout header -->
-      </header>
+      <!-- Headers -->
+      {{ partial "header-mobile-navigation" . }}
 
-      {{ template "main" . }} <!-- Page Content -->
+      <!-- Main content -->
+      {{ template "main" . }}
 
+      <!-- Footers -->
       <footer class="page-footer">
-        {{ template "footer" . }} <!-- Footer under page content -->
+        {{ partial "footer" . }} <!-- Footer under page content -->
       </footer>
 
-      <label for="menu-control" class="hidden menu-overlay"></label>
+      <!-- Mobile overlays to ensure there is a tappable big area to dismiss the menus -->
+      <label for="site-menu-control" class="hidden site-menu-overlay"></label>
+      {{- if (and .File (default true .Params.ContentMenu)) -}}
+      <label for="content-menu-control" class="hidden content-menu-overlay"></label>
+      {{- end -}}
     </div>
 
-    {{ if (and .File (default true (default .Site.Params.ToC .Params.ToC))) }}
-    <aside class="toc">
-      <div class="toc-content">
-        {{ template "toc" . }} <!-- Table of Contents -->
+    {{- if (and .File (default true .Params.ContentMenu)) -}}
+    <aside class="content-menu">
+      <div class="content-menu-content">
+        {{ partial "menu-right-content" . }}
       </div>
     </aside>
-    {{ end }}
+    {{- end -}}
   </main>
 </body>
 </html>
-
-{{ define "header" }}
-  {{ partial "header" . }}
-
-  {{ if default true (default .Site.Params.ToC .Params.ToC) }}
-  <aside class="hidden clearfix">
-    {{ template "toc" . }}
-  </aside>
-  {{ end }}
-{{ end }}
-
-{{ define "footer" }}
-  {{ partial "footer" . }}
-{{ end }}
-
-{{ define "toc" }}
-  {{ partial "toc" . }}
-{{ end }}

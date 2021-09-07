@@ -1,8 +1,8 @@
 // Responsive styles
-.menu-content,
-.toc-content,
+.site-menu-content,
+.content-menu-content,
 .page,
-.page-header aside,
+.mobile-navigation-header aside,
 .markdown {
   transition: 0.2s ease-in-out;
   transition-property: transform, margin, opacity, visibility;
@@ -11,28 +11,28 @@
 
 @media screen and (max-width: $mobile-breakpoint) {
   // Menu Handling
-  #menu-control,
-  #toc-control {
+  #site-menu-control,
+  #content-menu-control {
     display: inline;
   }
 
-  .page-header {
+  .mobile-navigation-header {
     display: block;
   }
 
-  .menu {
+  .site-menu {
     visibility: hidden;
     margin-inline-start: -$menu-width;
     font-size: $font-size-base;
     z-index: 1;
   }
 
-  #menu-control:checked ~ main {
-    .menu {
+  #site-menu-control:checked ~ main {
+    .site-menu {
       visibility: initial;
     }
 
-    .menu .menu-content {
+    .site-menu .site-menu-content {
       transform: translateX($menu-width);
       box-shadow: 0 0 $padding-8 rgba(0, 0, 0, 0.1);
     }
@@ -41,7 +41,7 @@
       opacity: 0.25;
     }
 
-    .menu-overlay {
+    .site-menu-overlay {
       display: block;
       position: absolute;
       top: 0;
@@ -51,14 +51,41 @@
     }
   }
 
-  #toc-control:checked ~ main {
-    .page-header aside {
+  .content-menu {
+    visibility: hidden;
+    position: relative;
+    left: $toc-width;
+    margin-inline-start: -$toc-width;
+    font-size: $font-size-base;
+    z-index: 1;
+  }
+
+  #content-menu-control:checked ~ main {
+    .content-menu {
+      visibility: initial;
+    }
+
+    .content-menu .content-menu-content {
+      transform: translateX(-$toc-width);
+      box-shadow: 0 0 $padding-8 rgba(0, 0, 0, 0.1);
+    }
+
+    .page {
+      opacity: 0.25;
+    }
+
+    .content-menu-overlay {
       display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
     }
   }
 
   // Parts of the page that needs to be rendered differently.
-  .page-header {
+  .mobile-navigation-header {
     margin-bottom: $padding-16;
 
     label {
@@ -66,7 +93,6 @@
     }
   }
 
-  .toc,
   .post-title {
     display: none;
   }
@@ -76,18 +102,22 @@
   }
 
   // Accessibility
-  #menu-control:focus ~ main label[for="menu-control"] {
+  #site-menu-control:focus ~ main label[for="site-menu-control"] {
     @include outline;
   }
 
-  #toc-control:focus ~ main label[for="toc-control"] {
+  #content-menu-control:focus ~ main label[for="content-menu-control"] {
     @include outline;
   }
 
   // RTL support
-  body[dir="rtl"] #menu-control:checked ~ main {
-    .menu .menu-content {
+  body[dir="rtl"] #site-menu-control:checked ~ main {
+    .site-menu .site-menu-content {
       transform: translateX(-$menu-width);
+    }
+
+    .content-menu .content-menu-content {
+       transform: translateX(-$toc-width);
     }
   }
 }

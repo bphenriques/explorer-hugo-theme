@@ -31,13 +31,7 @@ input.toggle {
   width: 0;
   overflow: hidden;
   opacity: 0;
-  position: absolute;
-}
-
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
+  position: fixed; // needs to be fixed otherwise page will automatic scroll on focus
 }
 
 @mixin spin($duration) {

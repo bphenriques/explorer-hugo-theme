@@ -1,0 +1,15 @@
+<header class="mobile-navigation-header">
+  <div class="flex align-center justify-between">
+    <label for="site-menu-control">
+      <img src="{{ "svg/menu-page.svg" | relURL }}" class="icon" alt="Page Menu" />
+    </label>
+
+    <strong>{{ partial "util/title" . }}</strong>
+
+    <label for="content-menu-control">
+      {{- if and .File (default true (default .Site.Params.ContentMenu .Params.ContentMenu)) -}}
+      <img src="{{ "svg/menu-content.svg" | relURL }}" class="icon" alt="Content Menu" />
+      {{- end -}}
+    </label>
+  </div>
+</header>

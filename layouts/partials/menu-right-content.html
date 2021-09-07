@@ -9,5 +9,10 @@
   {{ end }}
 </div>
 
+{{- if (default true (default .Site.Params.Backlinks .Params.Backlinks)) -}}
 {{ partial "component/backlinks" . }}
+{{- end -}}
+
+{{- if (default true (default .Site.Params.ToC .Params.ToC)) -}}
 {{ partial "component/table-of-contents" . }}
+{{- end -}}

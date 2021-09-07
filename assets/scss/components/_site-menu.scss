@@ -1,4 +1,4 @@
-.menu {
+.site-menu {
   flex: 0 0 $menu-width;
   font-size: $font-size-14;
 
@@ -10,7 +10,7 @@
     color: inherit;
   }
 
-  .menu-content {
+  .site-menu-content {
     width: $menu-width;
     padding: $padding-16;
     background: var(--body-background);
@@ -18,15 +18,15 @@
     @include fixed;
   }
 
-  .menu-tags-title {
+  .site-menu-tags-title {
     margin-bottom: 0.25rem;
   }
 
-  .menu-shortcut-link {
+  .site-menu-shortcut-link {
     font-weight: 600;
   }
 
-  .menu-tag-item {
+  .list-tag-item {
     padding: 0.5rem 0rem;
     display: flex;
     -moz-box-align: center;

@@ -73,12 +73,18 @@ enableGitInfo = true
 [params]
   # (Optional, default light) Sets color theme: light, dark or auto.
   # Theme 'auto' switches between dark and light modes based on browser/os preferences
-  BookTheme = 'dark'
+  Theme = 'dark'
 
   # (Optional, default to title) Sets the brand's name.
   BrandTitle = 'My Page'
 
-  # (Optional, default true) Controls table of contents visibility on right side of pages.
+  # (Optional, default true) Controls if the content's menu should be shown.
+  ContentMenu = true
+
+  # (Optional, default true) Controls if backlinks should be displayed.
+  Backlinks = true
+
+  # (Optional, default true) Controls table of contents visibility on right side of the page.
   # You can also specify this parameter per page in front matter.
   ToC = true
 
