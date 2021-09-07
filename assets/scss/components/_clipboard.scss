@@ -1,26 +1,20 @@
 .copy-code-button {
     color: #272822;
     background-color: var(--body-font-color);
-    border-color: #272822;
+    border-color: #272822; //
     border: 2px solid;
-    border-radius: 3px 3px 0px 0px;
+    border-radius: 0.3rem 0.3rem;
 
-    /* right-align */
-    display: block;
-    margin-left: auto;
-    margin-right: 0;
-
-    margin-bottom: -2px;
     padding: 3px 8px;
     font-size: 0.8em;
 
+    position: absolute;
+    right: 0;
+    opacity: 0.5;
+    width: 4rem;
+
    &:hover {
       cursor: pointer;
-   }
-
-   &active {
-      color: #272822;
-      background-color: var(--body-font-color);
    }
 }
 
