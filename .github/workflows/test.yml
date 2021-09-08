@@ -20,4 +20,4 @@ jobs:
           extended: true
 
       - name: Test Example Site
-        run: make test
+        run: make test THEME_NAME=tagged-digital-garden-hugo-theme

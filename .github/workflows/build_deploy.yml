@@ -21,7 +21,7 @@ jobs:
           extended: true
 
       - name: Build
-        run: make build
+        run: make build THEME_NAME=tagged-digital-garden-hugo-theme
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
