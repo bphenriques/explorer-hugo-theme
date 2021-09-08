@@ -20,5 +20,4 @@ jobs:
           extended: true
 
       - name: Test Example Site
-        working-directory: exampleSite
         run: make test
