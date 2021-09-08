@@ -42,7 +42,7 @@ Thank you!
 Navigate to your hugo project root and run:
 
 ```bash
-$ git submodule add https://github.com/bphenriques/tagged-digital-garden-hugo-theme themes/tagged-digital-garden-hugo-theme
+$ git submodule add https://github.com/bphenriques/tagged-digital-garden-hugo-theme themes/tagged-digital-garden
 ```
 
 Then either:
