@@ -5,10 +5,10 @@ tags = ["shortcode"]
 draft = false
 +++
 
-# Available Shortcodes
+## Available Shortcodes
 
-- [Columns](shortcode-for-columns.md)
-- [Details](shortcode-for-details.md)
-- [Hints](shortcode-for-hints.md)
-- [Mermaid](shortcode-for-mermaid.md)
-- [Tabs](shortcode-for-tabs.md)
+- [Columns]({{< relref "shortcode-for-columns" >}})
+- [Details]({{< relref "shortcode-for-details" >}})
+- [Hints]({{< relref "shortcode-for-hints" >}})
+- [Mermaid]({{< relref "shortcode-for-mermaid" >}})
+- [Tabs]({{< relref "shortcode-for-tabs" >}})

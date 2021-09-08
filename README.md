@@ -1,4 +1,4 @@
-# Tag Digital Garden Hugo Theme
+# Tagged Digital Garden Hugo Theme
 
 [![Hugo](https://img.shields.io/badge/hugo-0.85-blue.svg)](https://gohugo.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
@@ -8,17 +8,16 @@
 
 ## Overview
 
-This is my personal fork of [@alex-shpak](https://github.com/alex-shpak)'s [Hugo Book](https://github.com/alex-shpak/hugo-book) theme (MIT License)
-that I have been using in my [Digital Garden](https://bphenriques.github.io/knowledge-base).
+This is my personal theme that I am currently using in my [Digital Garden](https://bphenriques.github.io/knowledge-base) (based on [@alex-shpak](https://github.com/alex-shpak)'s [Hugo Book](https://github.com/alex-shpak/hugo-book) theme).
 
-I am building this theme to build my personal Digital Garden and to learn more about Hugo theming and web-development.
-Do not expect the same set of functionalities as the upstream theme (e.g., menu and localization) but expect some 
-additional ones such as:
-- Backlinks
-- Explorable graph
-- Colored Tag exploration
+I created this theme to learn more about Hugo theming and web-development, and I am sharing to contribute to the Digital Garden community and to learn more about
 
-Last and not the least, this theme is still **beta**. If you like this theme feel free to contribute! I am no front-end expert and there is so much room for improvement!
+What will you find here:
+- Automatic backlink generation.
+- Automatic graph generator to explore one's notes.
+- Tag menu to explore your notes.
+
+Last and not the least, this theme is still **in construction**. If you like this theme feel free to contribute!
 
 Thank you!
 
@@ -29,9 +28,9 @@ Thank you!
 - Mobile Friendly
 - Dark Mode
 - Primary features work without JavaScript
-- Backlinks
-- Explorable graph
-- Colorized Tags
+- Automatic backlink generation.
+- Automatic graph generator to explore one's notes.
+- Tag menu to explore your notes
 
 ## Requirements
 
@@ -43,12 +42,12 @@ Thank you!
 Navigate to your hugo project root and run:
 
 ```bash
-$ git submodule add https://github.com/bphenriques/tagged-notes-hugo-theme themes/tagged-notes-hugo-theme
+$ git submodule add https://github.com/bphenriques/tagged-digital-garden-hugo-theme themes/tagged-digital-garden-hugo-theme
 ```
 
 Then either:
-- Run hugo with the theme set: `hugo server --minify --theme tagged-notes-hugo-theme`
-- Set `theme` configuration setting to `tagged-notes-hugo-theme`.
+- Run hugo with the theme set: `hugo server --minify --theme tagged-digital-garden`
+- Set `theme` configuration setting to `tagged-digital-garden`.
 
 ## Content Creation
 
@@ -88,12 +87,11 @@ enableGitInfo = true
   # You can also specify this parameter per page in front matter.
   ToC = true
 
-  # (Optional, default none) Set the path to a logo for the book. If the logo is
-  # /static/logo.png then the path would be 'logo.png'
+  # (Optional, default none) Set the path to a logo. If the logo is /static/logo.png then the path would be 'logo.png'
   Logo = 'logo.png'
 
-  # (Optional, default Jan 2, 2006) Configure the date format used to render dates.
-  DateFormat = 'Jan 2, 2006'
+  # (Optional, default January 2, 2006) Configure the date format used to render dates.
+  DateFormat = 'January 2, 2006'
 
   # (Optional, default true) Enables search function with flexsearch,
   # Index is built on fly, therefore it might slowdown your website.
@@ -126,8 +124,8 @@ Support in the future. Let me know what you are looking for.
 | File                     | Description                                                                           |
 | ------------------------ | ------------------------------------------------------------------------------------- |
 | `static/favicon.png`     | Override default favicon                                                              |
-| `assets/scss/_custom.scss`    | Customise or override scss styles                                                     |
-| `assets/scss/_variables.scss` | Override default SCSS variables                                                       |
+| `assets/scss/override/_custom.scss`    | Customise or override scss styles                                                     |
+| `assets/scss/override/_variables.scss` | Override default SCSS variables                                                       |
 | `assets/scss/_fonts.scss`     | Replace default font with custom fonts (e.g. local files or remote like google fonts) |
 | `assets/js/mermaid.json`    | Replace Mermaid initialization config                                                 |
 
@@ -160,7 +158,6 @@ In fact almost empty not quite empty because an empty file looks like absent for
 - [Details](https://bphenriques.github.io/tagged-notes-hugo-theme/notes/shortcode-for-details/)
 - [Hints](https://bphenriques.github.io/tagged-notes-hugo-theme/notes/shortcode-for-hints/)
 - [Mermaid](https://bphenriques.github.io/tagged-notes-hugo-theme/notes/shortcode-for-mermaid/)
-- [Tabs](https://bphenriques.github.io/tagged-notes-hugo-theme/notes/shortcode-for-tabs/)
 - KaTeX - Not yet supported.
 
 By default, Goldmark trims unsafe outputs which might prevent some shortcodes from rendering. It is recommended to set `markup.goldmark.renderer.unsafe=true` if you encounter problems.
@@ -174,9 +171,8 @@ By default, Goldmark trims unsafe outputs which might prevent some shortcodes fr
 
 This theme wouldn't be possible without:
 - The awesome work done by [@alex-shpak](https://github.com/alex-shpak) in [Hugo Book](https://github.com/alex-shpak/hugo-book) (MIT License). 
-- Maggie Delano's [Digital Garden](https://www.maggiedelano.com/garden/) as it is where I
-  saw how one can add graph navigation on Jenkins (adapted to Hugo).
-- Several other Digital Gardens
+- Maggie Delano's [Digital Garden](https://www.maggiedelano.com/garden/) for inspiration.
+- Several other Digital Gardens.
 
 # Contributing
 

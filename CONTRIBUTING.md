@@ -1,9 +1,6 @@
 # Contributing
 
-This theme is far from being classified as stable so contributions are very welcome!
-
-Moreover, I may know one or two things about front-end but I am no expert! If you like this theme feel free to pitch in, 
-I thank you for your help.
+I may know one or two things about web design but I am no expert! If you like this theme feel free to contribute!
 
 # Previewing
 

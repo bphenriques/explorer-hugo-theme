@@ -5,7 +5,7 @@ tags = ["shortcode"]
 draft = false
 +++
 
-# Mermaid Chart
+## Mermaid Chart
 
 [MermaidJS](https://mermaid-js.github.io/) is library for generating svg charts and diagrams from text.
 
@@ -16,7 +16,7 @@ To override the [initialization config](https://mermaid-js.github.io/mermaid/#/S
 create a `mermaid.json` file in your `assets` folder!
 {{< /hint >}}
 
-## Example
+### Example
 
 {{< columns >}}
 ```tpl

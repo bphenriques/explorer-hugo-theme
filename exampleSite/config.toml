@@ -1,8 +1,30 @@
-theme = "tagged-notes-hugo-theme"
-title = "Example Digital Garden 🌱"
+theme = "tagged-digital-garden"
+title = "Tagged Digital Garden Example Site"
 
 [markup.goldmark.renderer]
   unsafe = true
 
 [params]
   Theme = 'dark'
+  BrandTitle = 'Tagged Digital Garden 🌱'
+
+  # (Optional, default true) Controls if the content's menu should be shown.
+  # ContentMenu = true
+
+  # (Optional, default true) Controls if backlinks should be displayed.
+  # Backlinks = true
+
+  # (Optional, default true) Controls table of contents visibility on right side of the page.
+  # You can also specify this parameter per page in front matter.
+  # ToC = true
+
+  # (Optional, default none) Set the path to a logo. If the logo is /static/logo.png then the path would be 'logo.png'
+  Logo = 'logo.svg'
+
+  # (Optional, default January 2, 2006) Configure the date format used to render dates.
+  DateFormat = 'Jan 2, 2006'
+
+  # (Optional, default true) Enables search function with flexsearch,
+  # Index is built on fly, therefore it might slowdown your website.
+  # Search = true
+

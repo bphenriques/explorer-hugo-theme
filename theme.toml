@@ -1,11 +1,11 @@
-name = "Tagged Notes"
+name = "Tagged Digital Garden"
 license = "MIT"
-licenselink = "https://github.com/bphenriques/tagged-notes-hugo-theme/blob/master/LICENSE"
+licenselink = "https://github.com/bphenriques/tagged-digital-garden-hugo-theme/blob/master/LICENSE"
 description = "Digital Garden Hugo theme with tag exploration"
-homepage = "https://github.com/bphenriques/tagged-notes-hugo-theme"
-tags = ["responsive", "clean", "digital-garden", "tags", "search", "mobile"]
+homepage = "https://github.com/bphenriques/tagged-digital-garden-hugo-theme"
+tags = ["responsive", "clean", "digital-garden", "tags", "search", "graph", "mobile"]
 features = []
-min_version = "0.68"
+min_version = "0.85"
 
 [author]
   name = "Bruno Henriques"

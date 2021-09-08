@@ -109,15 +109,4 @@
   #content-menu-control:focus ~ main label[for="content-menu-control"] {
     @include outline;
   }
-
-  // RTL support
-  body[dir="rtl"] #site-menu-control:checked ~ main {
-    .site-menu .site-menu-content {
-      transform: translateX(-$menu-width);
-    }
-
-    .content-menu .content-menu-content {
-       transform: translateX(-$toc-width);
-    }
-  }
 }

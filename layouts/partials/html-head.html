@@ -7,8 +7,6 @@
 
 <title>{{ partial "util/title" . }} | {{ .Site.Title -}}</title>
 
-{{- $manifest := resources.Get "js/manifest.json" | resources.ExecuteAsTemplate "manifest.json" . }}
-<link rel="manifest" href="{{ $manifest.RelPermalink }}">
 <link rel="icon" href="{{ "favicon.png" | relURL }}" type="image/x-icon">
 
 <!-- Theme stylesheet, you can customize scss by creating `assets/custom.scss` in your website -->
@@ -40,8 +38,8 @@
 {{ end -}}
 
 {{ "<!--" | safeHTML }}
-Made with Tagged Notes
-https://github.com/bphenriques/tagged-notes
+Made with Tagged Digital Garden
+https://github.com/bphenriques/tagged-digital-garden-hugo-theme
 {{ "-->" | safeHTML }}
 
 {{- define "integrity" -}}

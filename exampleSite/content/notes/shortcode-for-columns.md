@@ -5,7 +5,7 @@ tags = ["shortcode"]
 draft = false
 +++
 
-# Columns
+## Columns
 
 Columns help organize shorter pieces of content horizontally for readability.
 
@@ -26,10 +26,10 @@ Lorem markdownum insigne...
 {{</* /columns */>}}
 ```
 
-## Example
+### Example
 
 {{< columns >}}
-## Left Content
+### Left Content
 Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
 stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
 protulit, sed sed aere valvis inhaesuro Pallas animam: qui _quid_, ignes.
@@ -37,13 +37,13 @@ Miseratus fonte Ditis conubia.
 
 <--->
 
-## Mid Content
+### Mid Content
 Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
 stringit, frustra Saturnius uteroque inter!
 
 <--->
 
-## Right Content
+### Right Content
 Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
 stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
 protulit, sed sed aere valvis inhaesuro Pallas animam: qui _quid_, ignes.

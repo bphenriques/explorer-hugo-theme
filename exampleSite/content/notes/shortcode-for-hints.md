@@ -5,7 +5,7 @@ tags = ["shortcode"]
 draft = false
 +++
 
-# Hints
+## Hints
 
 Hint shortcode can be used as hint/alerts/notification block.  
 There are 3 colors to choose: `info`, `warning` and `danger`.
@@ -18,7 +18,7 @@ stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
 {{</* /hint */>}}
 ```
 
-## Example
+### Example
 
 {{< hint info >}}
 **Markdown content**  

@@ -1,5 +1,5 @@
 +++
-title = "Note 1 regarding topic 3"
+title = "Isolated note 1 regarding topic 3"
 author = ["Bruno Henriques"]
 tags = ["topic-3"]
 date = "2021-07-10"

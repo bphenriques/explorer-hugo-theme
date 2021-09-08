@@ -1,5 +1,5 @@
 +++
-title = "Post 1"
+title = "Sample Post 1"
 author = ["Bruno Henriques"]
 tags = ["topic-4"]
 draft = false
