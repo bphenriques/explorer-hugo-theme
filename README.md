@@ -10,20 +10,12 @@
 
 This is my personal theme that I am currently using in my [Digital Garden](https://bphenriques.github.io/knowledge-base) (based on [@alex-shpak](https://github.com/alex-shpak)'s [Hugo Book](https://github.com/alex-shpak/hugo-book) theme).
 
-I created this theme to learn more about Hugo theming and web-development, and I am sharing to contribute to the Digital Garden community and to learn more about
+I created this theme to learn more about Hugo theming and web-development, and I am sharing to contribute to the Digital Garden community.
 
-What will you find here:
-- Automatic backlink generation.
-- Automatic graph generator to explore one's notes.
-- Tag menu to explore your notes.
-
-Last and not the least, this theme is still **in construction**. If you like this theme feel free to contribute!
-
-Thank you!
+This theme is still **in construction**. If you like this theme feel free to contribute! Thank you!
 
 ## Features
 
-- Built for digital gardens (I used it for my [Digital Garden](https://bphenriques.github.io/knowledge-base))
 - Clean and simple design
 - Mobile Friendly
 - Dark Mode
@@ -170,7 +162,7 @@ By default, Goldmark trims unsafe outputs which might prevent some shortcodes fr
 # Thank you note
 
 This theme wouldn't be possible without:
-- The awesome work done by [@alex-shpak](https://github.com/alex-shpak) in [Hugo Book](https://github.com/alex-shpak/hugo-book) (MIT License). 
+- The awesome work done by [@alex-shpak](https://github.com/alex-shpak) in [Hugo Book](https://github.com/alex-shpak/hugo-book) (MIT License).
 - Maggie Delano's [Digital Garden](https://www.maggiedelano.com/garden/) for inspiration.
 - Several other Digital Gardens.
 
