@@ -21,4 +21,4 @@ jobs:
 
       - name: Test Example Site
         working-directory: exampleSite
-        run: hugo --themesDir ../.. --theme tagged-digital-garden-hugo-theme
+        run: make test

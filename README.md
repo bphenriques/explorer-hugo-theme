@@ -2,7 +2,7 @@
 
 [![Hugo](https://img.shields.io/badge/hugo-0.85-blue.svg)](https://gohugo.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-![Build with Hugo](https://github.com/bphenriques/tagged-notes-hugo-theme/actions/workflows/main.yml/badge.svg)
+![Build with Hugo](https://github.com/bphenriques/tagged-notes-hugo-theme/actions/workflows/test.yml/badge.svg)
 ![Beta](https://img.shields.io/badge/status-beta-orange.svg)
 ![Digital Garden](https://img.shields.io/badge/-Digital%20Garden-yellowgreen.svg)
 
