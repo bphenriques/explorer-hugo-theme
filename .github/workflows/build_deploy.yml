@@ -2,7 +2,7 @@ name: Build & Deploy
 on:
   push:
     branches:
-      - master
+      - main
 
 env:
   HUGO_VERSION: 0.85.0
