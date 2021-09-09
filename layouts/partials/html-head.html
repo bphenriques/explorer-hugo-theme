@@ -10,7 +10,7 @@
 <link rel="icon" href="{{ "favicon.png" | relURL }}" type="image/x-icon">
 
 <!-- Theme stylesheet, you can customize scss by creating `assets/custom.scss` in your website -->
-{{- $styles := resources.Get "scss/tagged-notes.scss" | resources.ExecuteAsTemplate "scss/tagged-notes.scss" . | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+{{- $styles := resources.Get "scss/explorer.scss" | resources.ExecuteAsTemplate "scss/explorer.scss" . | resources.ToCSS | resources.Minify | resources.Fingerprint }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}" {{ template "integrity" $styles }}>
 
 {{- if default true .Site.Params.Search -}}
@@ -39,7 +39,7 @@
 
 {{ "<!--" | safeHTML }}
 Made with Tagged Digital Garden
-https://github.com/bphenriques/tagged-digital-garden-hugo-theme
+https://github.com/bphenriques/explorer-hugo-theme
 {{ "-->" | safeHTML }}
 
 {{- define "integrity" -}}

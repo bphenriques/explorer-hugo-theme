@@ -1,8 +1,8 @@
-name = "Tagged Digital Garden"
+name = "Explorer - Digital Garden Theme"
 license = "MIT"
-licenselink = "https://github.com/bphenriques/tagged-digital-garden-hugo-theme/blob/master/LICENSE"
+licenselink = "https://github.com/bphenriques/explorer-hugo-theme/blob/master/LICENSE"
 description = "Digital Garden Hugo theme with tag exploration"
-homepage = "https://github.com/bphenriques/tagged-digital-garden-hugo-theme"
+homepage = "https://github.com/bphenriques/explorer-hugo-theme"
 tags = ["responsive", "clean", "digital-garden", "tags", "search", "graph", "mobile"]
 features = []
 min_version = "0.85"

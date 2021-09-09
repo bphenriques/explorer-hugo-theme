@@ -1,12 +1,12 @@
-theme = "tagged-digital-garden"
-title = "Tagged Digital Garden Example Site"
+theme = "explorer"
+title = "Explorer Theme Example Site"
 
 [markup.goldmark.renderer]
   unsafe = true
 
 [params]
   Theme = 'dark'
-  BrandTitle = 'Tagged Digital Garden 🌱'
+  BrandTitle = 'Explorer 🗺'
 
   # (Optional, default true) Controls if the content's menu should be shown.
   # ContentMenu = true

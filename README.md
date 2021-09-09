@@ -1,8 +1,8 @@
-# Tagged Digital Garden Hugo Theme
+# Explorer Hugo Theme 🗺️
 
 [![Hugo](https://img.shields.io/badge/hugo-0.85-blue.svg)](https://gohugo.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-![Build with Hugo](https://github.com/bphenriques/tagged-notes-hugo-theme/actions/workflows/test.yml/badge.svg)
+![Build with Hugo](https://github.com/bphenriques/explorer-hugo-theme/actions/workflows/test.yml/badge.svg)
 ![Beta](https://img.shields.io/badge/status-beta-orange.svg)
 ![Digital Garden](https://img.shields.io/badge/-Digital%20Garden-yellowgreen.svg)
 
@@ -34,12 +34,12 @@ This theme is still **in construction**. If you like this theme feel free to con
 Navigate to your hugo project root and run:
 
 ```bash
-$ git submodule add https://github.com/bphenriques/tagged-digital-garden-hugo-theme themes/tagged-digital-garden
+$ git submodule add https://github.com/bphenriques/explorer-hugo-theme themes/explorer
 ```
 
 Then either:
-- Run hugo with the theme set: `hugo server --minify --theme tagged-digital-garden`
-- Set `theme` configuration setting to `tagged-digital-garden`.
+- Run hugo with the theme set: `hugo server --minify --theme explorer`
+- Set `theme` configuration setting to `explorer`.
 
 ## Content Creation
 
@@ -146,10 +146,10 @@ In fact almost empty not quite empty because an empty file looks like absent for
 
 ## Shortcodes
 
-- [Columns](https://bphenriques.github.io/tagged-notes-hugo-theme/notes/shortcode-for-columns/)
-- [Details](https://bphenriques.github.io/tagged-notes-hugo-theme/notes/shortcode-for-details/)
-- [Hints](https://bphenriques.github.io/tagged-notes-hugo-theme/notes/shortcode-for-hints/)
-- [Mermaid](https://bphenriques.github.io/tagged-notes-hugo-theme/notes/shortcode-for-mermaid/)
+- [Columns](https://bphenriques.github.io/explorer-hugo-theme/notes/shortcode-for-columns/)
+- [Details](https://bphenriques.github.io/explorer-hugo-theme/notes/shortcode-for-details/)
+- [Hints](https://bphenriques.github.io/explorer-hugo-theme/notes/shortcode-for-hints/)
+- [Mermaid](https://bphenriques.github.io/explorer-hugo-theme/notes/shortcode-for-mermaid/)
 - KaTeX - Not yet supported.
 
 By default, Goldmark trims unsafe outputs which might prevent some shortcodes from rendering. It is recommended to set `markup.goldmark.renderer.unsafe=true` if you encounter problems.
