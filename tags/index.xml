@@ -1,53 +1,53 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Tagged Digital Garden Example Site</title>
-    <link>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/tags/</link>
-    <description>Recent content in Tags on Tagged Digital Garden Example Site</description>
+    <title>Tags on Explorer Theme Example Site</title>
+    <link>https://bphenriques.github.io/explorer-hugo-theme/tags/</link>
+    <description>Recent content in Tags on Explorer Theme Example Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 20 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bphenriques.github.io/tagged-digital-garden-hugo-theme/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bphenriques.github.io/explorer-hugo-theme/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>topic-1</title>
-      <link>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/tags/topic-1/</link>
+      <link>https://bphenriques.github.io/explorer-hugo-theme/tags/topic-1/</link>
       <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/tags/topic-1/</guid>
+      <guid>https://bphenriques.github.io/explorer-hugo-theme/tags/topic-1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>topic-3</title>
-      <link>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/tags/topic-3/</link>
+      <link>https://bphenriques.github.io/explorer-hugo-theme/tags/topic-3/</link>
       <pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/tags/topic-3/</guid>
+      <guid>https://bphenriques.github.io/explorer-hugo-theme/tags/topic-3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>shortcode</title>
-      <link>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/tags/shortcode/</link>
+      <link>https://bphenriques.github.io/explorer-hugo-theme/tags/shortcode/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/tags/shortcode/</guid>
+      <guid>https://bphenriques.github.io/explorer-hugo-theme/tags/shortcode/</guid>
       <description></description>
     </item>
     
     <item>
       <title>topic-2</title>
-      <link>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/tags/topic-2/</link>
+      <link>https://bphenriques.github.io/explorer-hugo-theme/tags/topic-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/tags/topic-2/</guid>
+      <guid>https://bphenriques.github.io/explorer-hugo-theme/tags/topic-2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>topic-4</title>
-      <link>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/tags/topic-4/</link>
+      <link>https://bphenriques.github.io/explorer-hugo-theme/tags/topic-4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/tags/topic-4/</guid>
+      <guid>https://bphenriques.github.io/explorer-hugo-theme/tags/topic-4/</guid>
       <description></description>
     </item>
     

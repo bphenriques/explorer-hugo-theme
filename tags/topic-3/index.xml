@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>topic-3 on Tagged Digital Garden Example Site</title>
-    <link>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/tags/topic-3/</link>
-    <description>Recent content in topic-3 on Tagged Digital Garden Example Site</description>
+    <title>topic-3 on Explorer Theme Example Site</title>
+    <link>https://bphenriques.github.io/explorer-hugo-theme/tags/topic-3/</link>
+    <description>Recent content in topic-3 on Explorer Theme Example Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 10 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bphenriques.github.io/tagged-digital-garden-hugo-theme/tags/topic-3/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bphenriques.github.io/explorer-hugo-theme/tags/topic-3/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Isolated note 1 regarding topic 3</title>
-      <link>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/notes/topic-3-note-1/</link>
+      <link>https://bphenriques.github.io/explorer-hugo-theme/notes/topic-3-note-1/</link>
       <pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/notes/topic-3-note-1/</guid>
+      <guid>https://bphenriques.github.io/explorer-hugo-theme/notes/topic-3-note-1/</guid>
       <description>Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa protulit, sed sed aere valvis inhaesuro Pallas animam: qui quid, ignes. Miseratus fonte Ditis conubia.</description>
     </item>
     

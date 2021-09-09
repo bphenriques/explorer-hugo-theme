@@ -1,91 +1,91 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Tagged Digital Garden Example Site</title>
-    <link>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/</link>
-    <description>Recent content in Home on Tagged Digital Garden Example Site</description>
+    <title>Home on Explorer Theme Example Site</title>
+    <link>https://bphenriques.github.io/explorer-hugo-theme/</link>
+    <description>Recent content in Home on Explorer Theme Example Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 20 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bphenriques.github.io/tagged-digital-garden-hugo-theme/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bphenriques.github.io/explorer-hugo-theme/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Note 1 regarding topic 1</title>
-      <link>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/notes/topic-1-note-1/</link>
+      <link>https://bphenriques.github.io/explorer-hugo-theme/notes/topic-1-note-1/</link>
       <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/notes/topic-1-note-1/</guid>
+      <guid>https://bphenriques.github.io/explorer-hugo-theme/notes/topic-1-note-1/</guid>
       <description>Adding Backlinks #  This page will become a backlink if some note share this note&amp;rsquo;s title is references in other pages such as Note 2 regarding topic 1 and Note 1 regarding topic 2 .</description>
     </item>
     
     <item>
       <title>Isolated note 1 regarding topic 3</title>
-      <link>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/notes/topic-3-note-1/</link>
+      <link>https://bphenriques.github.io/explorer-hugo-theme/notes/topic-3-note-1/</link>
       <pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/notes/topic-3-note-1/</guid>
+      <guid>https://bphenriques.github.io/explorer-hugo-theme/notes/topic-3-note-1/</guid>
       <description>Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa protulit, sed sed aere valvis inhaesuro Pallas animam: qui quid, ignes. Miseratus fonte Ditis conubia.</description>
     </item>
     
     <item>
       <title>Note 1 regarding topic 2</title>
-      <link>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/notes/topic-2-note-1/</link>
+      <link>https://bphenriques.github.io/explorer-hugo-theme/notes/topic-2-note-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/notes/topic-2-note-1/</guid>
+      <guid>https://bphenriques.github.io/explorer-hugo-theme/notes/topic-2-note-1/</guid>
       <description>Sample note that refers to Note 2 regarding topic 2 .</description>
     </item>
     
     <item>
       <title>Note 2 regarding topic 1</title>
-      <link>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/notes/topic-1-note-2/</link>
+      <link>https://bphenriques.github.io/explorer-hugo-theme/notes/topic-1-note-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/notes/topic-1-note-2/</guid>
+      <guid>https://bphenriques.github.io/explorer-hugo-theme/notes/topic-1-note-2/</guid>
       <description>Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa protulit, sed sed aere valvis inhaesuro Pallas animam: qui quid, ignes. Miseratus fonte Ditis conubia.</description>
     </item>
     
     <item>
       <title>Note 2 regarding topic 2</title>
-      <link>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/notes/topic-2-note-2/</link>
+      <link>https://bphenriques.github.io/explorer-hugo-theme/notes/topic-2-note-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/notes/topic-2-note-2/</guid>
+      <guid>https://bphenriques.github.io/explorer-hugo-theme/notes/topic-2-note-2/</guid>
       <description>Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa protulit, sed sed aere valvis inhaesuro Pallas animam: qui quid, ignes. Miseratus fonte Ditis conubia.</description>
     </item>
     
     <item>
       <title>Sample Post 1</title>
-      <link>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/posts/post-1/</link>
+      <link>https://bphenriques.github.io/explorer-hugo-theme/posts/post-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/posts/post-1/</guid>
+      <guid>https://bphenriques.github.io/explorer-hugo-theme/posts/post-1/</guid>
       <description>Sample blog post.</description>
     </item>
     
     <item>
       <title>Shortcode for Columns</title>
-      <link>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/notes/shortcode-for-columns/</link>
+      <link>https://bphenriques.github.io/explorer-hugo-theme/notes/shortcode-for-columns/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/notes/shortcode-for-columns/</guid>
+      <guid>https://bphenriques.github.io/explorer-hugo-theme/notes/shortcode-for-columns/</guid>
       <description>Columns #  Columns help organize shorter pieces of content horizontally for readability.
 {{&amp;lt; columns &amp;gt;}} &amp;lt;!-- begin columns block --&amp;gt; # Left Content Lorem markdownum insigne... &amp;lt;---&amp;gt; &amp;lt;!-- magic separator, between columns --&amp;gt; # Mid Content Lorem markdownum insigne... &amp;lt;---&amp;gt; &amp;lt;!-- magic separator, between columns --&amp;gt; # Right Content Lorem markdownum insigne... {{&amp;lt; /columns &amp;gt;}} Example #  Left Content Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat stringit, frustra Saturnius uteroque inter!</description>
     </item>
     
     <item>
       <title>Shortcode for Details</title>
-      <link>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/notes/shortcode-for-details/</link>
+      <link>https://bphenriques.github.io/explorer-hugo-theme/notes/shortcode-for-details/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/notes/shortcode-for-details/</guid>
+      <guid>https://bphenriques.github.io/explorer-hugo-theme/notes/shortcode-for-details/</guid>
       <description>Details #  Details shortcode is a helper for details html5 element. It is going to replace expand shortcode.
 Example #  {{&amp;lt; details &amp;#34;Title&amp;#34; [open] &amp;gt;}} ## Markdown content Lorem markdownum insigne... {{&amp;lt; /details &amp;gt;}} {{&amp;lt; details title=&amp;#34;Title&amp;#34; open=true &amp;gt;}} ## Markdown content Lorem markdownum insigne... {{&amp;lt; /details &amp;gt;}} Title Markdown content #  Lorem markdownum insigne&amp;hellip;   </description>
     </item>
     
     <item>
       <title>Shortcode for Hints</title>
-      <link>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/notes/shortcode-for-hints/</link>
+      <link>https://bphenriques.github.io/explorer-hugo-theme/notes/shortcode-for-hints/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/notes/shortcode-for-hints/</guid>
+      <guid>https://bphenriques.github.io/explorer-hugo-theme/notes/shortcode-for-hints/</guid>
       <description>Hints #  Hint shortcode can be used as hint/alerts/notification block.
 There are 3 colors to choose: info, warning and danger.
 {{&amp;lt; hint [info|warning|danger] &amp;gt;}} **Markdown content** Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa {{&amp;lt; /hint &amp;gt;}} Example #  Markdown content
@@ -94,10 +94,10 @@ Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat str
     
     <item>
       <title>Shortcode for Mermaid</title>
-      <link>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/notes/shortcode-for-mermaid/</link>
+      <link>https://bphenriques.github.io/explorer-hugo-theme/notes/shortcode-for-mermaid/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/notes/shortcode-for-mermaid/</guid>
+      <guid>https://bphenriques.github.io/explorer-hugo-theme/notes/shortcode-for-mermaid/</guid>
       <description>Mermaid Chart #  MermaidJS is library for generating svg charts and diagrams from text.
 Override Mermaid Initialization Config
 To override the initialization config for Mermaid, create a mermaid.json file in your assets folder!
@@ -106,20 +106,20 @@ To override the initialization config for Mermaid, create a mermaid.json file in
     
     <item>
       <title>Shortcode for Tabs</title>
-      <link>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/notes/shortcode-for-tabs/</link>
+      <link>https://bphenriques.github.io/explorer-hugo-theme/notes/shortcode-for-tabs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/notes/shortcode-for-tabs/</guid>
+      <guid>https://bphenriques.github.io/explorer-hugo-theme/notes/shortcode-for-tabs/</guid>
       <description>Tabs #  Tabs let you organize content by context, for example installation instructions for each supported platform.
 {{&amp;lt; tabs &amp;#34;uniqueid&amp;#34; &amp;gt;}} {{&amp;lt; tab &amp;#34;MacOS&amp;#34; &amp;gt;}} # MacOS Content {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; tab &amp;#34;Linux&amp;#34; &amp;gt;}} # Linux Content {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; tab &amp;#34;Windows&amp;#34; &amp;gt;}} # Windows Content {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; /tabs &amp;gt;}} Example #  MacOS Linux Windows  </description>
     </item>
     
     <item>
       <title>Shortcodes</title>
-      <link>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/notes/shortcodes/</link>
+      <link>https://bphenriques.github.io/explorer-hugo-theme/notes/shortcodes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/notes/shortcodes/</guid>
+      <guid>https://bphenriques.github.io/explorer-hugo-theme/notes/shortcodes/</guid>
       <description>Available Shortcodes #   Columns  Details  Hints  Mermaid  Tabs   </description>
     </item>
     

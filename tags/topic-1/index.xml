@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>topic-1 on Tagged Digital Garden Example Site</title>
-    <link>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/tags/topic-1/</link>
-    <description>Recent content in topic-1 on Tagged Digital Garden Example Site</description>
+    <title>topic-1 on Explorer Theme Example Site</title>
+    <link>https://bphenriques.github.io/explorer-hugo-theme/tags/topic-1/</link>
+    <description>Recent content in topic-1 on Explorer Theme Example Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 20 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bphenriques.github.io/tagged-digital-garden-hugo-theme/tags/topic-1/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bphenriques.github.io/explorer-hugo-theme/tags/topic-1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Note 1 regarding topic 1</title>
-      <link>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/notes/topic-1-note-1/</link>
+      <link>https://bphenriques.github.io/explorer-hugo-theme/notes/topic-1-note-1/</link>
       <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/notes/topic-1-note-1/</guid>
+      <guid>https://bphenriques.github.io/explorer-hugo-theme/notes/topic-1-note-1/</guid>
       <description>Adding Backlinks #  This page will become a backlink if some note share this note&amp;rsquo;s title is references in other pages such as Note 2 regarding topic 1 and Note 1 regarding topic 2 .</description>
     </item>
     
     <item>
       <title>Note 1 regarding topic 2</title>
-      <link>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/notes/topic-2-note-1/</link>
+      <link>https://bphenriques.github.io/explorer-hugo-theme/notes/topic-2-note-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/notes/topic-2-note-1/</guid>
+      <guid>https://bphenriques.github.io/explorer-hugo-theme/notes/topic-2-note-1/</guid>
       <description>Sample note that refers to Note 2 regarding topic 2 .</description>
     </item>
     
     <item>
       <title>Note 2 regarding topic 1</title>
-      <link>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/notes/topic-1-note-2/</link>
+      <link>https://bphenriques.github.io/explorer-hugo-theme/notes/topic-1-note-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bphenriques.github.io/tagged-digital-garden-hugo-theme/notes/topic-1-note-2/</guid>
+      <guid>https://bphenriques.github.io/explorer-hugo-theme/notes/topic-1-note-2/</guid>
       <description>Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa protulit, sed sed aere valvis inhaesuro Pallas animam: qui quid, ignes. Miseratus fonte Ditis conubia.</description>
     </item>
     
