@@ -2,19 +2,27 @@
   Returns true if Second is a backlink of the First.
   Usage: partial "docs/is-backlink" (dict "First" $page "Second" $otherPage)
 
-  Notes:
-  - The regex can be optimized to be a single pass-through.
+  It looks for titles/file_name preceded or followed by either ', " or whitespace.
+  Given that the title may have reserved regex (https://www3.ntu.edu.sg/home/ehchua/programming/howto/Regexe.html).
+
+  Ideally we escape them but given that their presence actually break the page build, lets leave that improvement
+  to a separate iteration. We can probably pick a match and prepend it with \.
 -->
 
 {{- $isNotSamePage := (not (eq .First.Title .Second.Title)) -}}
+
+{{- $regexSpecialCharacters := `[\.\+\*\?\^\$\(\)\[\]\{\}\|\\]` -}}
+{{- $normalized_file_name := (replaceRE $regexSpecialCharacters "" (lower .First.File.BaseFileName)) -}}
+{{- $normalized_title := (replaceRE $regexSpecialCharacters "" (lower .First.Title)) -}}
+
 {{- $mentionsFileName :=
-    (findRE
-        (printf "['\"\\s]?%s['\"\\s]" (lower .First.File.BaseFileName))
-        (lower .Second.RawContent)) -}}
+(findRE
+(printf "['\"\\s]?%s['\"\\s]?" $normalized_file_name)
+(lower .Second.RawContent)) -}}
 
 {{- $mentionsTitle :=
-    (findRE
-        (printf "['\"\\s]?%s['\"\\s]" (lower .First.Title))
-        (lower .Second.RawContent)) -}}
+(findRE
+(printf "['\"\\s]?%s['\"\\s]" $normalized_title)
+(lower .Second.RawContent)) -}}
 
 {{- return (and $isNotSamePage (or $mentionsFileName $mentionsTitle)) -}}
