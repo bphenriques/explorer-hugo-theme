@@ -12,7 +12,7 @@ This is my personal theme that I am currently using in my [Digital Garden](https
 
 I created this theme to learn more about Hugo theming and web-development, and I am sharing to contribute to the Digital Garden community.
 
-This theme is still **in construction**. If you like this theme feel free to contribute! Thank you!
+If you like this theme feel free to contribute! Thank you!
 
 ## Features
 
