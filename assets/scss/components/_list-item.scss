@@ -79,3 +79,10 @@
   font-weight: 400;
   font-size: 0.7rem;
 }
+
+// Ensure that there is some margin between tags when they span multiple lines
+.toc-tags {
+  .list-item-tag {
+    margin-top: 0.25rem;
+  }
+}
