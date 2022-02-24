@@ -68,12 +68,8 @@
   }
 
   img {
-    max-width: 85%;
+    max-width: 100%;
     height: auto;
-    display:block;
-    float:none;
-    margin-right: auto;
-    margin-left: auto;
   }
 
   code {
@@ -190,6 +186,24 @@
     figcaption p {
       margin-top: 0;
     }
+  }
+
+  //
+  // Org-Mode
+  //
+
+  // Center images. Use #+ATTR_HTML: :class center
+  figure.center img {
+    display:block;
+    float:none;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  // Set max-width to 85%. Use #+ATTR_HTML: :class center width-85
+  // TODO: This makes more sense being outside org-mode but #+ATTR_HTML: :style max-width:85% does not work.
+  figure.width-85 img {
+      max-width: 75%;
   }
 }
 
