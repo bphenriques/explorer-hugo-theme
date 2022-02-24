@@ -203,7 +203,18 @@
   // Set max-width to 85%. Use #+ATTR_HTML: :class center width-85
   // TODO: This makes more sense being outside org-mode but #+ATTR_HTML: :style max-width:85% does not work.
   figure.width-85 img {
-      max-width: 75%;
+    max-width: 75%;
+  }
+
+  // Inline svgs (e.g., Latex) will now render nicely.
+  img.org-svg {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  // Center Latex equations.
+  .equation-container {
+    text-align: center;
   }
 }
 
