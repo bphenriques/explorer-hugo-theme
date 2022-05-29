@@ -32,9 +32,11 @@
   }
 }
 
-#TableOfContents {
-  ul li:not(:first-child) {
-    margin: 0.75rem 0;
-  }
+#TableOfContents li {
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
 }
 
+#TableOfContents li li {
+    margin-left: 1em;
+}
