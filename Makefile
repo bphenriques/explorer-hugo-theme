@@ -9,3 +9,5 @@ test:
 build:
 	cd exampleSite && hugo --themesDir $(BASE_DIR)/.. --theme $(THEME_NAME) --destination $(DESTINATION) --cleanDestinationDir --baseURL $(BASE_URL)
 
+serve:
+	cd exampleSite && hugo serve --themesDir $(BASE_DIR)/.. --theme $(THEME_NAME) --destination $(DESTINATION) --cleanDestinationDir
