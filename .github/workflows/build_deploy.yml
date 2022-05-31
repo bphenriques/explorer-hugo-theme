@@ -5,7 +5,7 @@ on:
       - main
 
 env:
-  HUGO_VERSION: 0.85.0
+  HUGO_VERSION: 0.99.1
 
 jobs:
   gh-pages-deploy:
