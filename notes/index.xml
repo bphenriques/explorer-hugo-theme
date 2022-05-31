@@ -64,7 +64,7 @@ Another Sub-Sub-Sub Section #  Sub section</description>
       
       <guid>https://bphenriques.github.io/explorer-hugo-theme/notes/shortcode-for-columns/</guid>
       <description>Columns #  Columns help organize shorter pieces of content horizontally for readability.
-{{&amp;lt; columns &amp;gt;}} &amp;lt;!-- begin columns block --&amp;gt; # Left Content Lorem markdownum insigne...  &amp;lt;---&amp;gt; &amp;lt;!-- magic separator, between columns --&amp;gt;  # Mid Content Lorem markdownum insigne...  &amp;lt;---&amp;gt; &amp;lt;!-- magic separator, between columns --&amp;gt;  # Right Content Lorem markdownum insigne... {{&amp;lt; /columns &amp;gt;}} Example #  Left Content #  Lorem markdownum insigne. Olympo signis Delphis!</description>
+{{&amp;lt; columns &amp;gt;}} &amp;lt;!-- begin columns block --&amp;gt; # Left Content Lorem markdownum insigne... &amp;lt;---&amp;gt; &amp;lt;!-- magic separator, between columns --&amp;gt; # Mid Content Lorem markdownum insigne... &amp;lt;---&amp;gt; &amp;lt;!-- magic separator, between columns --&amp;gt; # Right Content Lorem markdownum insigne... {{&amp;lt; /columns &amp;gt;}} Example #  Left Content Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat stringit, frustra Saturnius uteroque inter!</description>
     </item>
     
     <item>
@@ -98,7 +98,7 @@ Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat str
       <description>Mermaid Chart #  MermaidJS is library for generating svg charts and diagrams from text.
 Override Mermaid Initialization Config
 To override the initialization config for Mermaid, create a mermaid.json file in your assets folder!
- Example #  {{&amp;lt; mermaid [class=&amp;#34;text-center&amp;#34;]&amp;gt;}} stateDiagram-v2  State1: The state with a note  note right of State1  Important information! You can write  notes.  end note  State1 --&amp;gt; State2  note left of State2 : This is the note to the left.</description>
+ Example #  {{&amp;lt; mermaid [class=&amp;#34;text-center&amp;#34;]&amp;gt;}} stateDiagram-v2 State1: The state with a note note right of State1 Important information! You can write notes. end note State1 --&amp;gt; State2 note left of State2 : This is the note to the left.</description>
     </item>
     
     <item>
