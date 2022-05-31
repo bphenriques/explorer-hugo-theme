@@ -1,6 +1,9 @@
 {
-  description = "explorer-hugo-theme";
-  inputs.flake-utils.url = "github:numtide/flake-utils";
+  description = "bphenriques's knowledge base";
+  inputs = {
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-21.11";
+    flake-utils.url = "github:numtide/flake-utils";
+  };
 
   outputs = { self, nixpkgs, flake-utils }:
     flake-utils.lib.eachDefaultSystem
