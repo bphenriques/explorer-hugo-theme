@@ -12,7 +12,13 @@
       <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://bphenriques.github.io/explorer-hugo-theme/notes/topic-1-note-1/</guid>
-      <description>Adding Backlinks #  This page will become a backlink if some note share this note&amp;rsquo;s title is references in other pages such as Note 2 regarding topic 1 and Note 1 regarding topic 2 .</description>
+      <description>Adding Backlinks #  This page will become a backlink if some note share this note&amp;rsquo;s title is references in other pages such as Note 2 regarding topic 1 and Note 1 regarding topic 2 .
+Sub Section #  Sub section
+Sub-Sub Section #  Sub section
+Sub-Sub-Sub Section #  Sub section
+Another Sub Section #  Sub section
+Another Sub-Sub Section #  Sub section
+Another Sub-Sub-Sub Section #  Sub section</description>
     </item>
     
     <item>
