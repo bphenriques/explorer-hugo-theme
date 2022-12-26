@@ -10,19 +10,16 @@
 
 This is my personal theme that I am currently using in my [Digital Garden](https://bphenriques.github.io/knowledge-base) (based on [@alex-shpak](https://github.com/alex-shpak)'s [Hugo Book](https://github.com/alex-shpak/hugo-book) theme).
 
-I created this theme to learn more about Hugo theming and web-development, and I am sharing to contribute to the Digital Garden community.
-
-If you like this theme feel free to contribute! Thank you!
+I created this theme to learn more about Hugo theming and web-development, and I am sharing to contribute to the Digital Garden community. Unfortunately, I am not an expert in this area and I have limited availability. If you like this theme feel free to contribute! Thank you!
 
 ## Features
 
-- Clean and simple design
-- Mobile Friendly
-- Dark Mode
-- Primary features work without JavaScript
+In summary, it changes the Hugo Book to use a tag-based/backlink navigation:
 - Automatic backlink generation.
 - Automatic graph generator to explore one's notes.
-- Tag menu to explore your notes
+- Tag Explorer side-menu to easily find your notes.
+
+Some styling choices and simplificates were were made. Some features I might have removed to simplify things.
 
 ## Requirements
 
