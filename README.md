@@ -1,3 +1,7 @@
+Archiving. Not actively maintaining.
+
+---
+
 # Explorer Hugo Theme 🗺️
 
 [![Hugo](https://img.shields.io/badge/hugo-0.85-blue.svg)](https://gohugo.io)
